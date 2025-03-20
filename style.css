@@ -19,29 +19,49 @@ body {
 }
 
 nav {
+    position: absolute;
     display: flex;
     justify-content: end;
     align-items: center;
     height: 8vh;
     width: 100%;
     gap: 2vw;
-    padding: 0px 1vw;
+    padding: 10px 1vw;
 }
 
-nav h4 {}
+
+nav h4 i {
+    font-weight: 100;
+    color: blanchedalmond;
+    padding: 9px;
+    background-color: black;
+    border-radius: 30px;
+}
 
 nav h4:hover {
     cursor: pointer;
 }
 
-nav h4 i {
-    font-weight: 100;
-    color: white;
+#nav1 {
+    justify-content: start;
+    align-items: center;
+    padding: 15px 20px;
 
-    padding: 9px;
-    background-color: black;
-    border-radius: 30px;
 }
+
+#nav1 i {
+
+    border-radius: 50%;
+    padding: 10px;
+    background-color: black;
+    color: blanchedalmond;
+    /* font-size: 10px; */
+}
+
+#name {
+    display: none;
+}
+
 
 #contain h1 {
     display: flex;
@@ -103,6 +123,7 @@ nav h4 i {
 }
 
 #image {
+    /* position: absolute; */
     height: 29vh;
     width: 100%;
     background-image: url(https://img.freepik.com/free-vector/illustrated-diverse-casual-people_53876-37261.jpg?t=st=1742448419~exp=1742452019~hmac=fd380afa4345e1d8b1395b283d37389f0f91e9bd0f139c02f2551a15c08eef11&w=900);
@@ -111,14 +132,50 @@ nav h4 i {
     mix-blend-mode: multiply;
 }
 
+footer {
+
+    display: none;
+}
 
 
 
 @media (max-width:600px) {
+
+    #main {
+
+        overflow: hidden;
+    }
+
     nav {
+
+        display: none;
         justify-content: center;
         align-items: center;
         gap: 3vw;
+    }
+
+    #nav1 {
+
+        justify-content: start;
+        align-items: center;
+        /* margin-top: 20px;
+        margin-left: 20px; */
+
+    }
+
+    #nav1 i {
+        display: inline-block;
+        font-size: 23px;
+
+    }
+
+    #name {
+        margin-top: 12PX;
+        margin-left: 40%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     #contain h1 {
@@ -143,5 +200,12 @@ nav h4 i {
         padding: 4vh 8vw;
     }
 
+    footer {
+        margin-top: 16%;
+        display: flex;
+        /* height: 20vh; */
+        justify-self: center;
+        align-self: baseline;
+    }
 
 }
