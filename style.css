@@ -170,7 +170,7 @@ footer {
     }
 
     #name {
-        margin-top: 12PX;
+        margin-top: 15px;
         margin-left: 40%;
         position: absolute;
         display: flex;
@@ -201,7 +201,7 @@ footer {
     }
 
     footer {
-        margin-top: 16%;
+        margin-top: 13%;
         display: flex;
         /* height: 20vh; */
         justify-self: center;
